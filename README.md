@@ -2,7 +2,7 @@
 ## Created by thereal-cc
 
 Using StudentVUE API for Python (Thank You StudentVUE)  
-Designed to provide easier access/use with their API
+Designed to provide easier access/use with their API, and display formatted output in the terminal
 
 ## How to Use
 1. Download project, and run main.py  
