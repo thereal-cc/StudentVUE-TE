@@ -4,6 +4,19 @@ from pprint import pprint
 Methods related to Student (Background Info)
 """
 
+def handle_student_action(sv):
+    print("Get To Know Your Info!")
+    print("1. View Your Info\n2. View Attendence")
+    selection = int(input("Your Choice: "))
+    print(" ")
+    if (selection == 1):
+        get_student_info(sv=sv)
+    elif (selection == 2): 
+        get_student_attendence(sv=sv)
+    else:
+        print("Error, Invalid Selection")
+        return 1
+
 def get_student_info(sv):
     student_info = sv.get_student_info().get('StudentInfo')
     
