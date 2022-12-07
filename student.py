@@ -85,4 +85,36 @@ def get_student_info(sv):
     input()
 
 def get_student_attendence(sv):
-    return
+    absences = sv.get_attendance().get('Attendance').get('Absences').get('Absence')
+    
+    for count, absence in enumerate(absences, start=1):
+        date = absence.get('@AbsenceDate')
+        print(f"{count}: {date}")
+
+    selection = int(input("Enter # You'd Like To Check: "))
+
+    try:
+        absence_day = absences[selection - 1]
+    except:
+        print("Error: Invalid Selection")
+        return 1
+
+    print("\nLet's look at this Absence: ")
+
+    absence_date = absence_day.get('@AbsenceDate')
+    absence_reason = absence_day.get('@Reason')
+    absence_note = absence_day.get('@Note')
+
+    print(f"Date: {absence_date}\nReason: {absence_reason}\nNote: {absence_note}")
+    print("Here are the periods you missed: \n")
+
+    periods = absence_day.get('Periods').get('Period')
+
+    for period in periods:
+        number = period.get('@Number')
+        absence_name = period.get('@Name')
+        course = period.get('@Course')
+
+        print(f"Period {number}, {course}, Absence Type: {absence_name}")
+
+    input()

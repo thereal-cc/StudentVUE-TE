@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 # Non user imports
 from studentvue import StudentVue
 from dotenv import load_dotenv

@@ -10,8 +10,8 @@ Designed to provide easier access/use with their API, and display formatted outp
 3. It'll be easy to use from there. Enjoy!  
    
 ## What's New
-Current Version: 1.0.1 
-- Simplified Layout
-- Updated Error Handling related to Schedules (When there's no School)
+Current Version: 1.1 
+- Attendance is Viewable (View Absences by Day)
+- Fixed Bugs/Errors
 
 ### P.S. Currently only works for Students (Not Teachers)

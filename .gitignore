@@ -1,3 +1,7 @@
+# setup.py will be working soon
+
 /__pycache__
+/student.egg-info
 /.env
 /todo.txt
+/setup.py 
