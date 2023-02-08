@@ -2,8 +2,6 @@
 
 # Non user imports
 from studentvue import StudentVue
-from dotenv import load_dotenv
-from pprint import pprint
 
 # User Imports
 from grades import handle_grade_action
@@ -13,7 +11,6 @@ from student import handle_student_action
 running = True
 
 def login():
-    load_dotenv() # Get This Working
     print("Enter Credentials: ")
     username = input("StudentVUE Username: ") # Your StudentVUE username
     password = input("StudentVue Password: ") # Your StudentVUE password
@@ -49,6 +46,6 @@ def main():
         elif (selection < 0 or selection > 4):
             print("Error, Invalid Option")
             return 1
-    
+
 if __name__ == "__main__":
     main()

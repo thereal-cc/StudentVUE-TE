@@ -1,5 +1,4 @@
 from collections import OrderedDict
-from pprint import pprint # Formatted Output for OrderedDict's
 
 """
 Methods related to Schedules
@@ -21,7 +20,7 @@ def handle_schedule_action(sv):
 def get_schedule(sv):
     # Get Schedule
     schedule = sv.get_schedule().get('StudentClassSchedule').get('TodayScheduleInfoData').get('SchoolInfos').get('SchoolInfo')
-    
+
     # If there's school today
     if schedule is not None:
         # Get Schedule Type
